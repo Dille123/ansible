@@ -1,19 +1,18 @@
 ---
-- name: play level varables
+- name: varables play
   hosts: local
   connection: local
   vars:
     COURSE: ansible
     DURATION: 20HR
-    TRAINER: dille
+    TRAINER: DILLESWARARAO
+    LOCATION: vizag
   tasks:
-  - name: print course information 
+  - name: cource names print the screen 
     ansible.builtin.debug:
-      msg: "hello {{ COURSE }}, course duration: {{ DURATION }}, trainer is {{ TRAINER}}"
+      msg: "hii hello {{ COURSE }}, course duration {{ DURATION }}, THE TRAINER IS {{ TRAINER }}, THE TRAINER LOCATION {{ LOCATION }}"
 
-  - name: print course information 
+  - name: print again course information 
     ansible.builtin.debug:
-      msg: "hello {{ COURSE }}, course duration: {{ DURATION }}, trainer is {{ TRAINER}}"
-
-
-
+      msg: " hello {{ COURSE }}, course duration {{ DURATION }}, THE TRAINER IS {{ TRAINER}}, THE TRAINER LOCATION {{ LOCATION }}"
+      
