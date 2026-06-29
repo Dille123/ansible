@@ -1,15 +1,15 @@
 ---
-- name: nginx install and run
-  hosts: frontend
+- name: mongodb install and run
+  hosts: mongodb
   become: yes # sudo access
   tasks:
   - name: install nginx server
     ansible.builtin.package:
-      name: nginx
+      name: mongodb
       state: present
   
-  - name: start nginx
+  - name: start mongodb
     ansible.builtin.service:
-      name: nginx
+      name: mongodb
       state: started
       enabled: yes
