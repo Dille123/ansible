@@ -1,9 +1,7 @@
 ---
 - name: varables from inventory
   hosts: frontend
-  connection: frontend
   tasks:
   - name: print course information
     ansible.builtin.debug:
       msg: " hello i am learninf this course {{ COURSE }}, duration {{ DURATION }}, trainer is {{ TRAINER }}"
-      
