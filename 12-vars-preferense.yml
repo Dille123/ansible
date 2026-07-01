@@ -5,15 +5,14 @@
   vars:
     - GREETING: hello from play
   vars_files:
-   - course.yml
+    - course.yml
   vars_prompt:
     - name: GREETING
-      prompt: pleace enter the greeeting 
+      prompt: pleace enter the greeeting
       priavte: false
   tasks:
-    - name: print the grreeting 
+    - name: print the grreeting
       vars:
         GREETING: Hello from tasks
       ansible.builtin.debug:
         msg: "{{ GREETING }}"
-        
