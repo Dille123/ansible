@@ -10,7 +10,7 @@
     - name: GREETING
       prompt: Please enter the GREETING
       private: false
-  # tasks:
+  tasks:
   #   - name: print the greeting
   #     vars:
   #       GREETING: Hello from TASK
