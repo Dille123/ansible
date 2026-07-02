@@ -1,0 +1,17 @@
+---
+- name: condition demo
+  hosts: local
+  connection: local
+  vars:
+    NUMBER: 87
+  tasks:
+  - name: print if the umber is less than or equal to 100
+    ansible.builtin.debug:
+      msg: " given number {{ NUMBER }}  is less than or equal to 100"
+    whaen: NUMBER <= 100
+
+  - name: print the if the number is greater than 100
+    ansible.builtin.debug:
+      msg: "Given number {{ NUMBER }} is greater than 100"
+    when: NUMBER > 100
+     
