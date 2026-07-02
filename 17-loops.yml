@@ -1,0 +1,19 @@
+---
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+      masg: " Helo, {{ item }}"
+
+    loop:
+    - dille
+    - suresh
+    - rajesh
+    - vamsi
+    - ganesh
+    - lokesh
+    - vikash raj
+    - tatatrao
+    
