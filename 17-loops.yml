@@ -5,15 +5,19 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-      masg: " Helo, {{ item }}"
-
+      msg: "Hello, {{ item }} " # item here is  resrved keyword,
+      ## item taken values one by one from list.
+    
     loop:
-    - dille
     - suresh
     - rajesh
-    - vamsi
-    - ganesh
-    - lokesh
-    - vikash raj
-    - tatatrao
-    
+    - ramesh
+    - joseph
+    - suresh
+    - rajesh
+    - ramesh
+    - joseph
+    - suresh
+    - rajesh
+    - ramesh
+    - joseph
